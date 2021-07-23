@@ -16,7 +16,7 @@ close = amzn_data["Close"].plot(figsize = (10,10), title='Amazon Close Price', y
 amzn_data = amzn_data.loc["2015-01-01":, :]
 amzn_data.head()
 #plot the close price from 2015 and on
-amzn_data["Close"].plot(figsize=(20,10), title='Amazon stock from 2015 to May 2021', ylabel = "Price");
+amzn_data["Close"].plot(figsize=(10,10), title='Amazon stock from 2015 to May 2021', ylabel = "Price");
 
 # We want to look at the noise and the trend within this plot, we will use the Hodrick-Prescott-Filter to separate the noise and the trend
 # We make a new data set just for the Close and then we will add columns noise and trend to it
