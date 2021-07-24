@@ -57,7 +57,7 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 pacf = plot_pacf(amzn_returns)
 
 # When we anaylze this graph we can see there is 1 significant outlier on both and there is 1 other outlier that is less signaficant 
-# based on this grpah we can either use an order of (1,1), or (2,2). we will try both to see what gives us better results
+# based on this grpah we can either use an order of (1,1) or (2,2)
 from statsmodels.tsa.arima_model import ARMA
 
 # We can now create the ARMA model using the return values and the order
